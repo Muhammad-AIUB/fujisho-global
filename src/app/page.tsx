@@ -7,27 +7,27 @@ import Image from "next/image";
 export default function Home() {
   const videos = useMemo(() => [
     { 
-      src: "/VDOS/Untitled design (1).mp4", 
+      src: "/videos/company.mp4", 
       title: "Company Overview",
       placeholder: "https://via.placeholder.com/400x250/1a1a1a/ffffff?text=Company+Overview+Video"
     },
     { 
-      src: "/VDOS/Untitled design (2).mp4", 
+      src: "/videos/services.mp4", 
       title: "Our Services",
       placeholder: "https://via.placeholder.com/400x250/2a2a2a/ffffff?text=Our+Services+Video"
     },
     { 
-      src: "/VDOS/Untitled design (3).mp4", 
+      src: "/videos/showcase.mp4", 
       title: "Project Showcase",
       placeholder: "https://via.placeholder.com/400x250/3a3a3a/ffffff?text=Project+Showcase+Video"
     },
     { 
-      src: "/VDOS/Untitled design (4).mp4", 
+      src: "/videos/technology.mp4", 
       title: "Technology Excellence",
       placeholder: "https://via.placeholder.com/400x250/4a4a4a/ffffff?text=Technology+Excellence+Video"
     },
     { 
-      src: "/VDOS/Untitled design.mp4", 
+      src: "/videos/partnership.mp4", 
       title: "Partnership & Growth",
       placeholder: "https://via.placeholder.com/400x250/5a5a5a/ffffff?text=Partnership+Growth+Video"
     }
