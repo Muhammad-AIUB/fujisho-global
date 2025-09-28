@@ -105,16 +105,34 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-[#2c1810]">
       {/* Hero Section */}
-      <section className="relative py-12 sm:py-16 md:py-20 lg:py-32 bg-gradient-to-br from-[#ffebee] via-[#ffcdd2] to-[#ffebee]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-12 sm:py-16 md:py-20 lg:py-32 overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 w-full h-full">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+            poster="/videos/company.mp4"
+          >
+            <source src="/videos/company.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-[#d32f2f] mb-6 sm:mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 drop-shadow-lg">
               <span className="text-[#e57373]">Powering Progress,</span>
               <br className="hidden sm:block" />
               <span className="sm:hidden"> </span>
               <span className="block sm:inline">Bridging Nations</span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-[#5d4037] max-w-4xl mx-auto leading-relaxed mb-8 sm:mb-12 px-2">
+            <p className="text-lg sm:text-xl md:text-2xl text-white max-w-4xl mx-auto leading-relaxed mb-8 sm:mb-12 px-2 drop-shadow-md">
               We are more than an EPC company — we are a bridge between Korea&apos;s
               advanced engineering expertise and Bangladesh&apos;s growing infrastructure needs. From
               substations to smart meters, from project design to commissioning, we stand at the intersection
