@@ -9,7 +9,7 @@ export default function SidPage() {
         <div>
           <Image
             src="/sid/1.jpg"
-            alt="SID Image 1"
+            alt="SID Project Image 1"
             width={800}
             height={600}
             className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
@@ -19,7 +19,7 @@ export default function SidPage() {
         <div>
           <Image
             src="/sid/2.jpg"
-            alt="SID Image 2"
+            alt="SID Project Image 2"
             width={800}
             height={600}
             className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
@@ -29,7 +29,7 @@ export default function SidPage() {
         <div>
           <Image
             src="/sid/3.jpg"
-            alt="SID Image 3"
+            alt="SID Project Image 3"
             width={800}
             height={600}
             className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
@@ -39,22 +39,13 @@ export default function SidPage() {
         <div>
           <Image
             src="/sid/4.jpg"
-            alt="SID Image 4"
+            alt="SID Project Image 4"
             width={800}
             height={600}
             className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
           />
         </div>
 
-        <div>
-          <Image
-            src="/sid/5.jpg"
-            alt="SID Image 5"
-            width={800}
-            height={600}
-            className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
-          />
-        </div>
       </div>
     </main>
   );
