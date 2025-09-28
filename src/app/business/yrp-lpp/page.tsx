@@ -8,8 +8,8 @@ export default function YrpLppPage() {
       <div className="space-y-6 sm:space-y-8">
         <div>
           <Image
-            src="/yrp/11.jpg"
-            alt="YRP-LPP Image 1"
+            src="/yrp/1.jpg"
+            alt="YRP-LPP Project Image 1"
             width={800}
             height={600}
             className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
@@ -18,8 +18,8 @@ export default function YrpLppPage() {
 
         <div>
           <Image
-            src="/yrp/22.jpg"
-            alt="YRP-LPP Image 2"
+            src="/yrp/2.jpg"
+            alt="YRP-LPP Project Image 2"
             width={800}
             height={600}
             className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
@@ -28,8 +28,8 @@ export default function YrpLppPage() {
 
         <div>
           <Image
-            src="/yrp/33.jpg"
-            alt="YRP-LPP Image 3"
+            src="/yrp/3.jpg"
+            alt="YRP-LPP Project Image 3"
             width={800}
             height={600}
             className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
