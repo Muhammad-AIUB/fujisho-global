@@ -9,7 +9,7 @@ export default function LocalConstructionPage() {
         <div>
           <Image
             src="/local/1.jpg"
-            alt="Local Construction Image 1"
+            alt="Local Construction Project Image 1"
             width={800}
             height={600}
             className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
@@ -19,7 +19,7 @@ export default function LocalConstructionPage() {
         <div>
           <Image
             src="/local/2.jpg"
-            alt="Local Construction Image 2"
+            alt="Local Construction Project Image 2"
             width={800}
             height={600}
             className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
@@ -29,7 +29,7 @@ export default function LocalConstructionPage() {
         <div>
           <Image
             src="/local/3.jpg"
-            alt="Local Construction Image 3"
+            alt="Local Construction Project Image 3"
             width={800}
             height={600}
             className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
@@ -39,7 +39,7 @@ export default function LocalConstructionPage() {
         <div>
           <Image
             src="/local/4.jpg"
-            alt="Local Construction Image 4"
+            alt="Local Construction Project Image 4"
             width={800}
             height={600}
             className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
