@@ -8,7 +8,7 @@ export default function SidPage() {
       <div className="space-y-6 sm:space-y-8">
         <div>
           <Image
-            src="/sid/1.jpg"
+            src="/SID/1.jpg"
             alt="SID Project Image 1"
             width={800}
             height={600}
@@ -18,7 +18,7 @@ export default function SidPage() {
 
         <div>
           <Image
-            src="/sid/2.jpg"
+            src="/SID/2.jpg"
             alt="SID Project Image 2"
             width={800}
             height={600}
@@ -28,7 +28,7 @@ export default function SidPage() {
 
         <div>
           <Image
-            src="/sid/3.jpg"
+            src="/SID/3.jpg"
             alt="SID Project Image 3"
             width={800}
             height={600}
@@ -38,7 +38,7 @@ export default function SidPage() {
 
         <div>
           <Image
-            src="/sid/4.jpg"
+            src="/SID/4.jpg"
             alt="SID Project Image 4"
             width={800}
             height={600}
