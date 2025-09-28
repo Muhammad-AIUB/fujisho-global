@@ -56,6 +56,22 @@ export default function ContactUsPage() {
                     </div>
                   </div>
                 </div>
+
+                {/* Map for Bangladesh Office */}
+                <div className="mt-4 sm:mt-6">
+                  <div className="rounded-lg sm:rounded-xl h-32 sm:h-40 lg:h-48 overflow-hidden">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.2!2d90.4025735!3d23.7900403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7001654f35d%3A0x6f3d2b4d4115f48b!2s1212%20Dhaka%2C%20Rd%20No%207A%2C%20%EB%8B%A4%EC%B9%B4%EB%A9%94%ED%83%80%20%EB%B2%95%EC%9D%B8%EC%82%AC%EB%AC%B4%EC%8B%A4!5e0!3m2!1sen!2sbd!4v1234567890123!5m2!1sen!2sbd"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Our Company Bangladesh Office"
+                    ></iframe>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -94,6 +110,22 @@ export default function ContactUsPage() {
                       <p className="font-semibold">Office Hours:</p>
                       <p>Monday – Friday, 9:00 AM – 6:00 PM KST</p>
                     </div>
+                  </div>
+                </div>
+
+                {/* Map for Korea Headquarters */}
+                <div className="mt-4 sm:mt-6">
+                  <div className="rounded-lg sm:rounded-xl h-32 sm:h-40 lg:h-48 overflow-hidden">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2!2d127.1!3d37.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDAwJzAwLjAiTiAxMjfCsDA2JzAwLjAiRQ!5e0!3m2!1sen!2skr!4v1234567890123!5m2!1sen!2skr"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Our Corporation Korea Headquarters"
+                    ></iframe>
                   </div>
                 </div>
               </div>
@@ -184,59 +216,6 @@ export default function ContactUsPage() {
         </div>
       </section>
 
-      {/* Map Integration Section */}
-      <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-[#f8f5f5] via-[#ffebee] to-[#f8f5f5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-6 sm:mb-8 lg:mb-12">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#d32f2f] mb-3 sm:mb-4">
-              Our Locations
-            </h2>
-            <div className="w-24 h-1 bg-[#e57373] mx-auto"></div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
-            {/* Bangladesh Office Map */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg border border-[#f5d5d5]">
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#d32f2f] mb-3 sm:mb-4 lg:mb-6 text-center">
-                Bangladesh Office
-              </h3>
-              <div className="rounded-lg sm:rounded-xl h-40 sm:h-48 lg:h-64 overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.2!2d90.4025735!3d23.7900403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7001654f35d%3A0x6f3d2b4d4115f48b!2s1212%20Dhaka%2C%20Rd%20No%207A%2C%20%EB%8B%A4%EC%B9%B4%EB%A9%94%ED%83%80%20%EB%B2%95%EC%9D%B8%EC%82%AC%EB%AC%B4%EC%8B%A4!5e0!3m2!1sen!2sbd!4v1234567890123!5m2!1sen!2sbd"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Our Company Bangladesh Office"
-                ></iframe>
-              </div>
-              <p className="text-xs sm:text-sm text-[#5d4037] mt-2 text-center">House 45, Road 7, Block F, Banani, Dhaka 1213, Bangladesh</p>
-            </div>
-
-            {/* Korea Headquarters Map */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg border border-[#f5d5d5]">
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#d32f2f] mb-3 sm:mb-4 lg:mb-6 text-center">
-                Korea Headquarters
-              </h3>
-              <div className="rounded-lg sm:rounded-xl h-40 sm:h-48 lg:h-64 overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2!2d127.1!3d37.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDAwJzAwLjAiTiAxMjfCsDA2JzAwLjAiRQ!5e0!3m2!1sen!2skr!4v1234567890123!5m2!1sen!2skr"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Our Corporation Korea Headquarters"
-                ></iframe>
-              </div>
-              <p className="text-xs sm:text-sm text-[#5d4037] mt-2 text-center">61 Godeokbuk-ro, Godeok-myeon, Pyeongtaek-si, Republic of Korea</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Call-to-Action Section */}
       <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-[#ffebee] via-[#ffcdd2] to-[#ffebee]">
