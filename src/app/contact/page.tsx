@@ -6,7 +6,7 @@ export default function ContactUsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#d32f2f] mb-3 sm:mb-4 md:mb-6">
-              Get in Touch with Fujisho Global Ltd.
+              Get in Touch with Our Company
             </h1>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#5d4037] max-w-4xl mx-auto leading-relaxed px-2">
               We are here to answer your inquiries, discuss opportunities, and build strong partnerships.
@@ -30,7 +30,7 @@ export default function ContactUsPage() {
               
               <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                 <div>
-                  <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#d32f2f] mb-2 sm:mb-3">Fujisho Global Ltd.</h3>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#d32f2f] mb-2 sm:mb-3">Our Company Ltd.</h3>
                   <p className="text-sm sm:text-base lg:text-lg text-[#5d4037] leading-relaxed">
                     House 45, Road 7, Block F<br />
                     Banani, Dhaka 1213, Bangladesh
@@ -45,7 +45,7 @@ export default function ContactUsPage() {
                   
                   <div className="flex items-center">
                     <span className="text-[#e57373] mr-2 sm:mr-3 lg:mr-4 text-sm sm:text-base">✉️</span>
-                    <span className="text-sm sm:text-base lg:text-lg text-[#5d4037]">info@fujishoglobal.com</span>
+                    <span className="text-sm sm:text-base lg:text-lg text-[#5d4037]">info@ourcompany.com</span>
                   </div>
                   
                   <div className="flex items-start">
@@ -70,7 +70,7 @@ export default function ContactUsPage() {
               
               <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                 <div>
-                  <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#d32f2f] mb-2 sm:mb-3">Fujisho Corporation Korea</h3>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-[#d32f2f] mb-2 sm:mb-3">Our Corporation Korea</h3>
                   <p className="text-sm sm:text-base lg:text-lg text-[#5d4037] leading-relaxed">
                     61 Godeokbuk-ro, Godeok-myeon<br />
                     Pyeongtaek-si, Republic of Korea
@@ -85,7 +85,7 @@ export default function ContactUsPage() {
                   
                   <div className="flex items-center">
                     <span className="text-[#e57373] mr-2 sm:mr-3 lg:mr-4 text-sm sm:text-base">✉️</span>
-                    <span className="text-sm sm:text-base lg:text-lg text-[#5d4037]">hq@fujishocorp.com</span>
+                    <span className="text-sm sm:text-base lg:text-lg text-[#5d4037]">hq@ourcompany.com</span>
                   </div>
                   
                   <div className="flex items-start">
@@ -209,7 +209,7 @@ export default function ContactUsPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Fujisho Global Ltd. Bangladesh Office"
+                  title="Our Company Bangladesh Office"
                 ></iframe>
               </div>
               <p className="text-xs sm:text-sm text-[#5d4037] mt-2 text-center">House 45, Road 7, Block F, Banani, Dhaka 1213, Bangladesh</p>
@@ -229,7 +229,7 @@ export default function ContactUsPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Fujisho Corporation Korea Headquarters"
+                  title="Our Corporation Korea Headquarters"
                 ></iframe>
               </div>
               <p className="text-xs sm:text-sm text-[#5d4037] mt-2 text-center">61 Godeokbuk-ro, Godeok-myeon, Pyeongtaek-si, Republic of Korea</p>

@@ -16,15 +16,10 @@ export default function Navbar() {
         <div className="relative flex h-14 sm:h-16 md:h-20 items-center justify-between">
           <div className="flex items-center gap-2 sm:gap-3">
             <Link href="/" className="flex items-center gap-1 sm:gap-2">
-              <Image src="/Image/logo.jpg" alt="Fujisho Global" width={160} height={160} className="h-12 sm:h-16 md:h-20 w-auto object-contain" />
+              <Image src="/Image/logo.jpg" alt="Company Logo" width={160} height={160} className="h-12 sm:h-16 md:h-20 w-auto object-contain" />
             </Link>
           </div>
 
-          <div className="absolute left-1/2 -translate-x-1/2 hidden sm:block">
-            <Link href="/" className="text-sm sm:text-base md:text-lg font-bold tracking-tight text-[#e57373]">
-              Fujisho Global
-            </Link>
-          </div>
 
           <div className="hidden md:flex items-center gap-6 text-sm font-medium">
             <Link href="/" className="text-[#e57373] hover:text-[#d32f2f] hover:underline underline-offset-4">Home</Link>

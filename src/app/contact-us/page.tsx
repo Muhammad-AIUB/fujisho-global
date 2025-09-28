@@ -7,7 +7,7 @@ export default function ContactUsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-[#d32f2f] mb-4 sm:mb-6">
-              Get in Touch with Fujisho Global Ltd.
+              Get in Touch with Our Company
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-[#5d4037] max-w-4xl mx-auto leading-relaxed">
               We are here to answer your inquiries, discuss opportunities, and build strong partnerships.
@@ -31,7 +31,7 @@ export default function ContactUsPage() {
               
               <div className="space-y-4 sm:space-y-6">
                 <div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-[#d32f2f] mb-2 sm:mb-3">Fujisho Global Ltd.</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold text-[#d32f2f] mb-2 sm:mb-3">Our Company Ltd.</h3>
                   <p className="text-base sm:text-lg text-[#5d4037] leading-relaxed">
                     House 45, Road 7, Block F<br />
                     Banani, Dhaka 1213, Bangladesh
@@ -46,7 +46,7 @@ export default function ContactUsPage() {
                   
                   <div className="flex items-center">
                     <span className="text-[#e57373] mr-3 sm:mr-4">✉️</span>
-                    <span className="text-base sm:text-lg text-[#5d4037]">info@fujishoglobal.com</span>
+                    <span className="text-base sm:text-lg text-[#5d4037]">info@ourcompany.com</span>
                   </div>
                   
                   <div className="flex items-start">
@@ -71,7 +71,7 @@ export default function ContactUsPage() {
               
               <div className="space-y-4 sm:space-y-6">
                 <div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-[#d32f2f] mb-2 sm:mb-3">Fujisho Corporation Korea</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold text-[#d32f2f] mb-2 sm:mb-3">Our Corporation Korea</h3>
                   <p className="text-base sm:text-lg text-[#5d4037] leading-relaxed">
                     61 Godeokbuk-ro, Godeok-myeon<br />
                     Pyeongtaek-si, Republic of Korea
@@ -86,7 +86,7 @@ export default function ContactUsPage() {
                   
                   <div className="flex items-center">
                     <span className="text-[#e57373] mr-3 sm:mr-4">✉️</span>
-                    <span className="text-base sm:text-lg text-[#5d4037]">hq@fujishocorp.com</span>
+                    <span className="text-base sm:text-lg text-[#5d4037]">hq@ourcompany.com</span>
                   </div>
                   
                   <div className="flex items-start">

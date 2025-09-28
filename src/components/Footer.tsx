@@ -9,14 +9,14 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <Link href="/" className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
-              <Image src="/Image/logo.jpg" alt="Fujisho Global" width={160} height={160} className="h-12 sm:h-16 w-auto object-contain" />
+              <Image src="/Image/logo.jpg" alt="Company Logo" width={160} height={160} className="h-12 sm:h-16 w-auto object-contain" />
               <div>
-                <h3 className="text-lg sm:text-xl font-bold text-[#d32f2f]">Fujisho Global</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-[#d32f2f]">Our Company</h3>
                 <p className="text-xs sm:text-sm text-[#5d4037]">Powering Progress, Bridging Nations</p>
               </div>
             </Link>
             <p className="text-[#5d4037] text-xs sm:text-sm leading-relaxed">
-              Subsidiary of Fujisho Corporation Korea, delivering world-class EPC solutions and strategic trading for Bangladesh&apos;s power sector.
+              Subsidiary of Our Corporation Korea, delivering world-class EPC solutions and strategic trading for Bangladesh&apos;s power sector.
             </p>
           </div>
 
@@ -40,12 +40,12 @@ export default function Footer() {
           <div className="space-y-3 sm:space-y-4">
             <h4 className="text-base sm:text-lg font-semibold text-[#d32f2f]">Contact Information</h4>
             <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-[#5d4037]">
-              <p className="font-semibold text-[#d32f2f]">Fujisho Global Ltd.</p>
+              <p className="font-semibold text-[#d32f2f]">Our Company Ltd.</p>
               <p className="text-[#d32f2f] font-medium hover:underline">
-                <a href="mailto:zahin@fujishocorp.com">zahin@fujishocorp.com</a>
+                <a href="mailto:zahin@ourcompany.com">zahin@ourcompany.com</a>
               </p>
               <p className="text-[#d32f2f] font-medium hover:underline">
-                <a href="mailto:Info@fujishocorp.com">Info@fujishocorp.com</a>
+                <a href="mailto:Info@ourcompany.com">Info@ourcompany.com</a>
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-[#f5d5d5] pt-4 sm:pt-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4">
-            <p className="text-xs sm:text-sm text-[#5d4037] text-center sm:text-left">© {new Date().getFullYear()} Fujisho Global. All rights reserved.</p>
+            <p className="text-xs sm:text-sm text-[#5d4037] text-center sm:text-left">© {new Date().getFullYear()} Our Company. All rights reserved.</p>
             <div className="flex items-center gap-4 sm:gap-6 text-xs sm:text-sm text-[#5d4037]">
               <span>Privacy Policy</span>
               <span>Terms of Service</span>

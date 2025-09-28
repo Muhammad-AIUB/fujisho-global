@@ -115,7 +115,7 @@ export default function Home() {
               <span className="block sm:inline">Bridging Nations</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-[#5d4037] max-w-4xl mx-auto leading-relaxed mb-8 sm:mb-12 px-2">
-              At Fujisho Global Ltd., we are more than an EPC company — we are a bridge between Korea&apos;s
+              We are more than an EPC company — we are a bridge between Korea&apos;s
               advanced engineering expertise and Bangladesh&apos;s growing infrastructure needs. From
               substations to smart meters, from project design to commissioning, we stand at the intersection
               of innovation, reliability, and trust.
@@ -141,7 +141,7 @@ export default function Home() {
                   <Check className="h-5 w-5 sm:h-6 sm:w-6 text-[#e57373] mt-1" />
                 </div>
                 <p className="text-base sm:text-lg text-[#5d4037] leading-relaxed">
-                  Subsidiary of Fujisho Corporation Korea, a proven leader in electrical construction.
+                  Subsidiary of Our Corporation Korea, a proven leader in electrical construction.
                 </p>
               </li>
 

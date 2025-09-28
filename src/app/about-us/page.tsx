@@ -27,7 +27,7 @@ export default function AboutUsPage() {
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-[#d32f2f] mb-4 sm:mb-6">
               About{" "}
               <span className="text-[#e57373] relative">
-                Fujisho Global
+                Our Company
                 <div className="absolute -bottom-1 sm:-bottom-2 left-0 right-0 h-1 bg-[#e57373] transform scale-x-75"></div>
               </span>
             </h1>
@@ -47,9 +47,9 @@ export default function AboutUsPage() {
             </h2>
             <div className="prose prose-base sm:prose-lg max-w-none text-[#5d4037] leading-relaxed">
               <p>
-                Fujisho Global Ltd. was founded with a clear purpose: to bring Korea&apos;s decades of electrical
+                Our company was founded with a clear purpose: to bring Korea&apos;s decades of electrical
                 engineering excellence into Bangladesh&apos;s fast-evolving energy sector. As a wholly owned
-                subsidiary of Fujisho Corporation Korea, we inherit a proud legacy of <strong>quality craftsmanship,
+                subsidiary of Our Corporation Korea, we inherit a proud legacy of <strong>quality craftsmanship,
                 timely delivery, and customer-first values</strong>.
               </p>
             </div>
@@ -251,14 +251,14 @@ export default function AboutUsPage() {
                   Our Founder
                 </h3>
                 <p className="text-base sm:text-lg text-[#5d4037] leading-relaxed">
-                  Mr. Sangmoon Kim founded Fujisho Corporation in Korea with a vision to
+                  Mr. Sangmoon Kim founded Our Corporation in Korea with a vision to
                   deliver world-class electrical and engineering solutions. Through his leadership, the
                   company quickly grew beyond Korea, expanding operations into Hong Kong and
                   Vietnam, building a reputation for quality, trust, and innovation.
                 </p>
                 <p className="text-base sm:text-lg text-[#5d4037] leading-relaxed mt-3 sm:mt-4">
                   Carrying forward his legacy, his son Mr. Gapyong Kim, the current Chairman, led the
-                  expansion into Bangladesh and established Fujisho Global Ltd. — bridging Korean
+                  expansion into Bangladesh and established our company — bridging Korean
                   expertise with Bangladesh&apos;s growing energy and infrastructure needs.
                 </p>
               </div>
@@ -280,11 +280,11 @@ export default function AboutUsPage() {
                   Our Chairman
                 </h3>
                 <p className="text-base sm:text-lg text-[#5d4037] leading-relaxed">
-                  Mr. Gap Young Kim leads Fujisho Global Ltd. with vision and determination. Building
-                  on the legacy of his father, Founder Sangmoon Kim, he expanded Fujisho&apos;s
+                  Mr. Gap Young Kim leads our company with vision and determination. Building
+                  on the legacy of his father, Founder Sangmoon Kim, he expanded our company&apos;s
                   footprint to Bangladesh, creating a trusted platform for EPC projects and global trading.
                   With strong expertise in the Korean electrical construction market and deep international
-                  partnerships, he is driving Fujisho Global Ltd. toward innovation, sustainable growth, and
+                  partnerships, he is driving our company toward innovation, sustainable growth, and
                   meaningful Korea–Bangladesh cooperation.
                 </p>
               </div>
@@ -306,11 +306,11 @@ export default function AboutUsPage() {
                   Our Managing Director
                 </h3>
                 <p className="text-base sm:text-lg text-[#5d4037] leading-relaxed">
-                  Mr. Shahid-E-Manzur Masum is the Managing Director of Fujisho Global Ltd. A
+                  Mr. Shahid-E-Manzur Masum is the Managing Director of our company. A
                   seasoned entrepreneur with decades of experience in international trade,
                   infrastructure, and energy, he plays a pivotal role in leading the company&apos;s operations in
                   Bangladesh. With his strong business acumen, trusted industry network, and
-                  commitment to excellence, Mr. Masum is guiding Fujisho Global Ltd. toward becoming
+                  commitment to excellence, Mr. Masum is guiding our company toward becoming
                   a key partner in the nation&apos;s power and development sector while strengthening ties
                   with global stakeholders.
                 </p>
@@ -338,7 +338,7 @@ export default function AboutUsPage() {
               </h3>
               <div className="space-y-3 sm:space-y-4 text-base sm:text-lg text-[#5d4037] leading-relaxed">
                 <p>
-                  At Fujisho Global Ltd., we believe that true success comes from building bridges—between
+                  We believe that true success comes from building bridges—between
                   nations, industries, and people. What began as my father&apos;s vision in Korea has today grown into
                   a global presence across Asia, with Bangladesh at the heart of our future.
                 </p>
@@ -349,14 +349,14 @@ export default function AboutUsPage() {
                   and build long-term trust with our partners.
                 </p>
                 <p>
-                  As Chairman, I am dedicated to strengthening the legacy of Fujisho while ensuring we remain
+                  As Chairman, I am dedicated to strengthening the legacy of our company while ensuring we remain
                   forward-looking, adaptable, and impactful in every endeavor. Together, with our team and
                   partners, we will continue to drive progress and shape a brighter future.
                 </p>
               </div>
               <div className="mt-8 pt-6 border-t border-[#f5d5d5]">
                 <p className="text-base sm:text-lg font-semibold text-[#e57373]">– Gap Young Kim</p>
-                <p className="text-sm sm:text-base text-[#5d4037]">Chairman, Fujisho Global Ltd.</p>
+                <p className="text-sm sm:text-base text-[#5d4037]">Chairman, Our Company</p>
               </div>
             </div>
 
@@ -367,14 +367,14 @@ export default function AboutUsPage() {
               </h3>
               <div className="space-y-3 sm:space-y-4 text-base sm:text-lg text-[#5d4037] leading-relaxed">
                 <p>
-                  Fujisho Global Ltd. was founded with a vision to bring world-class expertise to Bangladesh&apos;s
+                  Our company was founded with a vision to bring world-class expertise to Bangladesh&apos;s
                   infrastructure and energy sector. As Managing Director, my focus has always been on building
                   trust, delivering excellence, and creating opportunities that benefit both our partners and our
                   nation.
                 </p>
                 <p>
                   Through strong collaborations with leading global companies and the dedication of our team, we
-                  are working to position Fujisho Global Ltd. as a reliable and forward-looking partner in EPC
+                  are working to position our company as a reliable and forward-looking partner in EPC
                   projects, power solutions, and international trade.
                 </p>
                 <p>
@@ -385,7 +385,7 @@ export default function AboutUsPage() {
               </div>
               <div className="mt-8 pt-6 border-t border-[#f5d5d5]">
                 <p className="text-base sm:text-lg font-semibold text-[#e57373]">– Shahid-E-Manzur Masum</p>
-                <p className="text-sm sm:text-base text-[#5d4037]">Managing Director, Fujisho Global Ltd.</p>
+                <p className="text-sm sm:text-base text-[#5d4037]">Managing Director, Our Company</p>
               </div>
             </div>
           </div>
