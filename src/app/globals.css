@@ -1,12 +1,26 @@
 @import "tailwindcss";
 
 :root {
+  /* Light Red and White Color Scheme */
   --background: #ffffff;
-  --foreground: #171717;
-  --surface: #ffffff;
-  --border: #f3caca;
-  --brand-red: #d32f2f;
-  --brand-red-dark: #b71c1c;
+  --foreground: #2c1810;
+  --surface: #fefefe;
+  --surface-secondary: #f8f5f5;
+  --border: #f5d5d5;
+  --border-light: #fce8e8;
+  
+  /* Light Red Palette */
+  --brand-red: #e57373;
+  --brand-red-light: #ffcdd2;
+  --brand-red-lighter: #ffebee;
+  --brand-red-dark: #d32f2f;
+  --brand-red-darker: #b71c1c;
+  
+  /* Accent Colors */
+  --accent-red: #ffab91;
+  --accent-pink: #f8bbd9;
+  --text-red: #c62828;
+  --text-light: #5d4037;
 }
 
 @theme inline {
@@ -15,25 +29,69 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --surface: #000000;
-    --border: #262626;
-  }
-}
-
-/* Force dark theme when .dark is present */
-.dark {
-  --background: #000000;
-  --foreground: #ffffff;
-  --surface: #000000;
-  --border: #262626;
-}
-
+/* Light theme only - no dark mode for this color scheme */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+/* Global light red and white styling */
+* {
+  box-sizing: border-box;
+}
+
+/* Light red gradient backgrounds */
+.bg-light-red {
+  background: linear-gradient(135deg, var(--brand-red-lighter) 0%, var(--brand-red-light) 100%);
+}
+
+.bg-light-red-subtle {
+  background: linear-gradient(135deg, #ffffff 0%, var(--brand-red-lighter) 100%);
+}
+
+/* Light red borders */
+.border-light-red {
+  border-color: var(--border);
+}
+
+/* Light red text */
+.text-light-red {
+  color: var(--brand-red);
+}
+
+.text-light-red-dark {
+  color: var(--brand-red-dark);
+}
+
+/* Hover effects */
+.hover-light-red:hover {
+  background-color: var(--brand-red-lighter);
+  transition: background-color 0.2s ease;
+}
+
+/* Card styling with light red accents */
+.card-light-red {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(229, 115, 115, 0.1);
+}
+
+/* Button styling */
+.btn-light-red {
+  background: var(--brand-red);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-light-red:hover {
+  background: var(--brand-red-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(229, 115, 115, 0.3);
 }

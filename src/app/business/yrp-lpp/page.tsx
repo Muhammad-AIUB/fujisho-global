@@ -1,8 +1,41 @@
+import Image from "next/image";
+
 export default function YrpLppPage() {
   return (
-    <main className="min-h-screen mx-auto max-w-5xl px-4 py-10">
-      <h1 className="text-2xl font-semibold text-[#D32F2F]">YRP-LPP</h1>
-      <p className="mt-4 text-gray-700">Content coming soon.</p>
+    <main className="min-h-screen mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#D32F2F] mb-6 sm:mb-8">YRP-LPP</h1>
+      
+      <div className="space-y-6 sm:space-y-8">
+        <div>
+          <Image
+            src="/yrp/11.jpg"
+            alt="YRP-LPP Image 1"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
+          />
+        </div>
+
+        <div>
+          <Image
+            src="/yrp/22.jpg"
+            alt="YRP-LPP Image 2"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
+          />
+        </div>
+
+        <div>
+          <Image
+            src="/yrp/33.jpg"
+            alt="YRP-LPP Image 3"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-lg sm:rounded-xl shadow-lg"
+          />
+        </div>
+      </div>
     </main>
   );
 }
