@@ -5,6 +5,11 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import Image from "next/image";
 
 export default function Home() {
+  const [heroVideoLoaded, setHeroVideoLoaded] = useState(false);
+  const [heroVideoError, setHeroVideoError] = useState(false);
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
+  const heroContainerRef = useRef<HTMLDivElement>(null);
+
   const videos = useMemo(() => [
     { 
       src: "/videos/company.mp4", 
@@ -57,6 +62,26 @@ export default function Home() {
     }, 500);
   };
 
+  // Intersection Observer for hero video lazy loading
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !heroVideoLoaded && !heroVideoError) {
+            setHeroVideoLoaded(true);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (heroContainerRef.current) {
+      observer.observe(heroContainerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [heroVideoLoaded, heroVideoError]);
+
   // Auto-start first video on page load
   useEffect(() => {
     if (!autoPlayStarted && videos.length > 0) {
@@ -107,18 +132,56 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative py-12 sm:py-16 md:py-20 lg:py-32 overflow-hidden">
         {/* Video Background */}
-        <div className="absolute inset-0 w-full h-full">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-            poster="/videos/company.mp4"
-          >
-            <source src="/videos/company.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div className="absolute inset-0 w-full h-full" ref={heroContainerRef}>
+          {/* Loading Skeleton */}
+          {!heroVideoLoaded && !heroVideoError && (
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+              <div className="text-center">
+                <div className="text-4xl sm:text-5xl mb-4 animate-pulse">🎬</div>
+                <div className="text-white text-lg sm:text-xl mb-2">Loading Video...</div>
+                <div className="w-32 h-1 bg-gray-600 mx-auto rounded-full overflow-hidden">
+                  <div className="h-full bg-[#e57373] animate-pulse"></div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Error State */}
+          {heroVideoError && (
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+              <div className="text-center">
+                <div className="text-4xl sm:text-5xl mb-4">📹</div>
+                <div className="text-white text-lg sm:text-xl mb-2">Video Loading Failed</div>
+                <button
+                  onClick={() => {
+                    setHeroVideoError(false);
+                    setHeroVideoLoaded(false);
+                  }}
+                  className="bg-[#e57373] hover:bg-[#d32f2f] text-white px-6 py-3 rounded-lg transition-colors"
+                >
+                  Retry
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Actual Video */}
+          {heroVideoLoaded && (
+            <video
+              ref={heroVideoRef}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover transition-opacity duration-500"
+              onError={() => setHeroVideoError(true)}
+              onLoadedData={() => setHeroVideoLoaded(true)}
+            >
+              <source src="/videos/company.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          )}
+          
           {/* Overlay for better text readability */}
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
@@ -227,7 +290,7 @@ export default function Home() {
                           src={video.src}
                           controls
                           muted
-                          preload="auto"
+                          preload="metadata"
                           className="w-full h-full object-cover"
                           onEnded={handleVideoEnd}
                           onError={(e) => {
@@ -259,7 +322,7 @@ export default function Home() {
                       <video
                         src={video.src}
                         muted
-                        preload="metadata"
+                        preload="none"
                         className="absolute inset-0 w-full h-full object-cover"
                         poster=""
                       />
