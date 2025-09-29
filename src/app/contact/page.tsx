@@ -1,4 +1,42 @@
+'use client';
+
+import { useState, useEffect, useRef } from 'react';
+
 export default function ContactUsPage() {
+  const [mapsLoaded, setMapsLoaded] = useState({ bangladesh: false, korea: false });
+  const bangladeshMapRef = useRef<HTMLDivElement>(null);
+  const koreaMapRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Intersection Observer for lazy loading maps
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const target = entry.target as HTMLElement;
+            const mapType = target.dataset.mapType;
+            
+            if (mapType === 'bangladesh' && !mapsLoaded.bangladesh) {
+              setMapsLoaded(prev => ({ ...prev, bangladesh: true }));
+            } else if (mapType === 'korea' && !mapsLoaded.korea) {
+              setMapsLoaded(prev => ({ ...prev, korea: true }));
+            }
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (bangladeshMapRef.current) {
+      observer.observe(bangladeshMapRef.current);
+    }
+    if (koreaMapRef.current) {
+      observer.observe(koreaMapRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [mapsLoaded]);
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#ffebee] via-[#ffcdd2] to-[#ffebee]">
       {/* Hero Section */}
@@ -58,18 +96,32 @@ export default function ContactUsPage() {
                 </div>
 
                 {/* Map for Bangladesh Office */}
-                <div className="mt-4 sm:mt-6">
-                  <div className="rounded-lg sm:rounded-xl h-32 sm:h-40 lg:h-48 overflow-hidden">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.2!2d90.4025735!3d23.7900403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7001654f35d%3A0x6f3d2b4d4115f48b!2s1212%20Dhaka%2C%20Rd%20No%207A%2C%20%EB%8B%A4%EC%B9%B4%EB%A9%94%ED%83%80%20%EB%B2%95%EC%9D%B8%EC%82%AC%EB%AC%B4%EC%8B%A4!5e0!3m2!1sen!2sbd!4v1234567890123!5m2!1sen!2sbd"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      title="Our Company Bangladesh Office"
-                    ></iframe>
+                <div className="mt-4 sm:mt-6" ref={bangladeshMapRef} data-map-type="bangladesh">
+                  <div className="rounded-lg sm:rounded-xl h-32 sm:h-40 lg:h-48 overflow-hidden relative">
+                    {/* Loading Skeleton */}
+                    {!mapsLoaded.bangladesh && (
+                      <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 animate-pulse flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="text-2xl sm:text-3xl mb-2">🗺️</div>
+                          <div className="text-xs sm:text-sm text-gray-600">Loading map...</div>
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* Actual Map */}
+                    {mapsLoaded.bangladesh && (
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.2!2d90.4025735!3d23.7900403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7001654f35d%3A0x6f3d2b4d4115f48b!2s1212%20Dhaka%2C%20Rd%20No%207A%2C%20%EB%8B%A4%EC%B9%B4%EB%A9%94%ED%83%80%20%EB%B2%95%EC%9D%B8%EC%82%AC%EB%AC%B4%EC%8B%A4!5e0!3m2!1sen!2sbd!4v1234567890123!5m2!1sen!2sbd"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="eager"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Our Company Bangladesh Office"
+                        className="transition-opacity duration-300"
+                      ></iframe>
+                    )}
                   </div>
                 </div>
               </div>
@@ -114,18 +166,32 @@ export default function ContactUsPage() {
                 </div>
 
                 {/* Map for Korea Headquarters */}
-                <div className="mt-4 sm:mt-6">
-                  <div className="rounded-lg sm:rounded-xl h-32 sm:h-40 lg:h-48 overflow-hidden">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2!2d127.1!3d37.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDAwJzAwLjAiTiAxMjfCsDA2JzAwLjAiRQ!5e0!3m2!1sen!2skr!4v1234567890123!5m2!1sen!2skr"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      title="Our Corporation Korea Headquarters"
-                    ></iframe>
+                <div className="mt-4 sm:mt-6" ref={koreaMapRef} data-map-type="korea">
+                  <div className="rounded-lg sm:rounded-xl h-32 sm:h-40 lg:h-48 overflow-hidden relative">
+                    {/* Loading Skeleton */}
+                    {!mapsLoaded.korea && (
+                      <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 animate-pulse flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="text-2xl sm:text-3xl mb-2">🗺️</div>
+                          <div className="text-xs sm:text-sm text-gray-600">Loading map...</div>
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* Actual Map */}
+                    {mapsLoaded.korea && (
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2!2d127.1!3d37.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDAwJzAwLjAiTiAxMjfCsDA2JzAwLjAiRQ!5e0!3m2!1sen!2skr!4v1234567890123!5m2!1sen!2skr"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="eager"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Our Corporation Korea Headquarters"
+                        className="transition-opacity duration-300"
+                      ></iframe>
+                    )}
                   </div>
                 </div>
               </div>
