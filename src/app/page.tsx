@@ -322,7 +322,7 @@ export default function Home() {
                       <video
                         src={video.src}
                         muted
-                        preload="none"
+                        preload="metadata"
                         className="absolute inset-0 w-full h-full object-cover"
                         poster=""
                       />
